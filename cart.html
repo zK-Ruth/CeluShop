@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <title>My Cart - Celushop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <header>
+    <a href="index.html" style="margin-right: 1006px">
+      <img class="logo" src="png/logo.png" alt="logo picture" />
+    </a>
+    <a class="cta" href="accessory.html"
+      ><button class="button-cart">Accessories</button></a
+    >
+  </header>
+
+  <body onload="displayCartItems()">
+    <div class="cart-main">
+      <div id="cart-items" style="margin-left: 70px"></div>
+      <div class="product">
+        <div class="details-button-container">
+          <button
+            class="about"
+            style="
+              margin-top: 10px;
+              padding: 30px 50px;
+              font-size: 40px;
+              border-radius: 7px;
+            "
+          >
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  
+  <script src="script.js"></script>
+</html>

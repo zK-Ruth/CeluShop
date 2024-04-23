@@ -1,0 +1,475 @@
+<html lang="en">
+  <head>
+    <title>Celushop Main Page</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <button class="close-button" onclick="hidePopup()">X</button>
+        <img src="png/logo.png" alt="logo picture">
+        <h5>SIGN UP FOR 10% OFF YOUR FIRST ORDER</h5>
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <header>
+      <a href="index.html" style="margin-right: 600px">
+        <img class="logo" src="png/logo.png" alt="logo picture" />
+      </a>
+      <nav>
+        <ul class="nav__links">
+            <li><a id="signup-link" href="#">Sign Up</a></li>
+        </ul>
+    </nav>
+      <a class="cta" href="accessory.html"
+        ><button class="button-cart">Accessories</button></a
+      >
+      <a class="cta" href="cart.html"
+        ><button class="button-cart">Cart</button></a
+      >
+    </header>
+
+    <center>
+      <div class="extra-section">
+        <div>
+          <div class="slide fade" style="display: block">
+            <img src="stock2.jpg" alt="Image 1" />
+          </div>
+          <div class="slide fade">
+            <img src="stock1.jpg" alt="Image 2" />
+          </div>
+          <div class="slide fade">
+            <img src="stock3.jpg" alt="Image 3" />
+          </div>
+          <div class="slide fade">
+            <img src="stock4.jpg" alt="Image 4" />
+          </div>
+          <!-- Navigation arrows -->
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          <br /><br />
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="product">
+          <img src="png/s23ultra.png" alt="Samsung Galaxy S23 Ultra picture" />
+          <div class="characteristics">
+            <h3>Samsung Galaxy S23 Ultra</h3>
+            <p class="price">Price: From $1199.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 256GB-1TB</div>
+                <div class="detail-item">Camera: 200MP</div>
+                <div class="detail-item">RAM: 12GB</div>
+                <div class="detail-item">Battery: 5000mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/samsung_galaxy_s23_ultra-12024.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Samsung Galaxy S23 Ultra', 1199.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="s23p.jpg" alt="Samsung Galaxy S23 Plus picture" />
+          <div class="characteristics">
+            <h3>Samsung Galaxy S23 Plus</h3>
+            <p class="price">Price: From $999.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 256GB-1TB</div>
+                <div class="detail-item">Camera: 50MP</div>
+                <div class="detail-item">RAM: 12GB</div>
+                <div class="detail-item">Battery: 4700mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/samsung_galaxy_s23+-12083.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Samsung Galaxy S23 Plus', 999.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="png/s22ultra.png" alt="Samsung Galaxy S22 Ultra picture" />
+          <div class="characteristics">
+            <h3>Samsung Galaxy S22 Ultra</h3>
+            <p class="price">Price: From $1049.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 128GB-1TB</div>
+                <div class="detail-item">Camera: 108MP</div>
+                <div class="detail-item">RAM: 8GB-12GB</div>
+                <div class="detail-item">Battery: 5000mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/samsung_galaxy_s22_ultra_5g-11251.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Samsung Galaxy S22 Ultra', 1049.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="s22p.jpg" alt="Samsung Galaxy S22 Plus Picture" />
+          <div class="characteristics">
+            <h3>Samsung Galaxy S22 Plus</h3>
+            <p class="price">Price: From $799.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 128GB-256GB</div>
+                <div class="detail-item">Camera: 50MP</div>
+                <div class="detail-item">RAM: 8GB</div>
+                <div class="detail-item">Battery: 4500mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/samsung_galaxy_s22+_5g-11252.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Samsung Galaxy S22 Plus', 799.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="zfold5.jpg" alt="Samsung Galaxy Z Fold 5 picture" />
+          <div class="characteristics">
+            <h3>Samsung Galaxy Z Fold 5</h3>
+            <p class="price">Price: From $1880.00</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 256GB-1TB</div>
+                <div class="detail-item">Camera: 50MP</div>
+                <div class="detail-item">RAM: 12GB</div>
+                <div class="detail-item">Battery: 4400mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/samsung_galaxy_z_fold5-12418.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Samsung Galaxy Z Fold 5', 1880.00)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="ip14pmax.jpg" alt="Iphone 14 Pro Max picture" />
+          <div class="characteristics">
+            <h3>Iphone 14 Pro Max</h3>
+            <p class="price">Price: From $1099.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 256GB-1TB</div>
+                <div class="detail-item">Camera: 48MP</div>
+                <div class="detail-item">RAM: 6GB</div>
+                <div class="detail-item">Battery: 4300mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/apple_iphone_14_pro_max-11773.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Iphone 14 Pro Max', 1099.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="ip14.jpg" alt="Iphone 14 picture" />
+          <div class="characteristics">
+            <h3>Iphone 14</h3>
+            <p class="price">Price: From $799.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 128GB-1TB</div>
+                <div class="detail-item">Camera: 12MP</div>
+                <div class="detail-item">RAM: 6GB</div>
+                <div class="detail-item">Battery: 4200mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/apple_iphone_14-11861.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Iphone 14', 799.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="ip13pmax.jpg" alt="Iphone 13 Pro Max picture" />
+          <div class="characteristics">
+            <h3>Iphone 13 Pro Max</h3>
+            <p class="price">Price: From $999.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 128GB-1TB</div>
+                <div class="detail-item">Camera: 12MP</div>
+                <div class="detail-item">RAM: 16GB</div>
+                <div class="detail-item">Battery: 4300mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/apple_iphone_13_pro_max-11089.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Iphone 13 Pro Max', 999.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="ip13.jpg" alt="Iphone 13 picture" />
+          <div class="characteristics">
+            <h3>Iphone 13</h3>
+            <p class="price">Price: From $599.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 128GB-512GB</div>
+                <div class="detail-item">Camera: 12MP</div>
+                <div class="detail-item">RAM: 4GB</div>
+                <div class="detail-item">Battery: 3240mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/apple_iphone_13-11103.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Iphone 13', 599.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="png/zflip.png" alt="Samsung Galaxy Z Flip 5 picture" />
+          <div class="characteristics">
+            <h3>Samsung Galaxy Z Flip 5</h3>
+            <p class="price">Price: From $1099.99</p>
+            <div class="details-button-container">
+              <button class="expand-button" onclick="toggleDetails(this)">
+                More Details
+              </button>
+              <div class="details" style="display: none">
+                <div class="detail-item">Storage: 256GB-512GB</div>
+                <div class="detail-item">Camera: 12MP</div>
+                <div class="detail-item">RAM: 8GB</div>
+                <div class="detail-item">Battery: 3700mAh</div>
+                <u style="color: #000"
+                  ><p style="font-weight: bold">
+                    <a
+                      style="color: #000"
+                      href="https://www.gsmarena.com/samsung_galaxy_z_flip5-12252.php"
+                      target="_blank"
+                      >More Specifications</a
+                    >
+                  </p></u
+                >
+              </div>
+              <div class="details-button-container">
+                <button
+                  class="about"
+                  onclick="addToCart('Samsung Galaxy Z Flip 5', 1099.99)"
+                  style="margin-top: 10px"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-section">
+        <br />
+        <b><h1>About Us.</h1></b>
+        <div class="text-wrapper">
+          <div class="contact-left">
+            <h5>Celushop, the popular store in Isabela</h5>
+            <h5>brought online! Check the newest phones</h5>
+            <h5>at the best price possible. Contact us</h5>
+            <h5>and we'll help as fast as possibe.</h5>
+          </div>
+          <div class="contact-right">
+            <h5>
+              <u style="color: 6528F7">
+                <a href="mailto: mdanielcruz66@gmail.com">Send Email</a>
+              </u>
+            </h5>
+            <h5>Phone Number: +1 (787)-878-7878</h5>
+            <h5>
+              <a href="about.html"><button class="about">About Me</button></a>
+            </h5>
+            <br />
+          </div>
+        </div>
+        <br />
+      </div>
+    </center>
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
